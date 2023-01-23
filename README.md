@@ -1,29 +1,22 @@
-# [HOME](index.html)
-
-# [http://localhost](http://localhost)
-
-# [https://parisite.net/](https://parisite.net/)
-
-# [TRASH WEB REPLICATOR ON GITHUB](https://github.com/LafeLabs/trashmagic/tree/main/web)
-
-# [WWW DOT SLOANS LAKE DOT ART](https://www.sloanslake.art)
-
-# [WWW DOT SOUTH BROADWAY DOT NET](https://www.southbroadway.net)
-
-# [WWW DOT SOUTH PLATTE DOT NET](https://www.southplatte.net)
-
-# [TRASH MAGIC](https://github.com/LafeLabs/trashmagic/)
-
+# TRASHNET 
 
 The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
 
-The network of web pages built on servers from the trash is called the TRASH WEB. We use the TRASH WEB to build web pages representing places, people and trash.  We use these to create TRASH MAGIC QUESTS, which are actions people can take to build towards full TRASH MAGIC.  We go out into public spaces and connect physical trash with the TRASH MAGIC WEB, and create QUESTS for people to follow to transform all of the trash in the world into self-replicating free things.
+The TRASH NET is self-replicating media made from trash. We take donations of computers from waste streams and put web servers on them. We buy domain names ending in something other than .com which are based on shared public spaces like streets, bodies of water, parks, neighborhoods, or ideas.  We point these domains and their sub-domains to the trash servers(collectively known as THE DUMP).  We use these servers to host self-replicating documents about building self-replicating things from trash.  
+
+In the TRASHNET we put all the trash on the network.  We aim to transform all of the trash made by all of humanity at the global level into hypertext. Trash will link to documents which link to how to metabolize the trash into a replication economy. 
 
 
-# The Web of Trash
+We aim to abolish all mining and other resource extraction by 2050, replacing the consumer economy with a replication economy.
+
+ - [HOME](index.html)
+ - [http://localhost](http://localhost)
+ - [TRASH NET REPLICATOR ON GITHUB](https://github.com/LafeLabs/trashnet)
+ - [WWW DOT SLOANS LAKE DOT ART](https://www.sloanslake.art)
+ - [WWW DOT SOUTH BROADWAY DOT NET](https://www.southbroadway.net)
+ - [WWW DOT SOUTH PLATTE DOT NET](https://www.southplatte.net)
 
 self-replicating web pages.
-
 
 Find any old computer that someone is getting rid of, it could be mac, pc or linux(but not Chromebook).  
 
@@ -40,7 +33,7 @@ sudo apt install php libapache2-mod-php -y
 cd /var/www/html
 sudo rm index.html
 sudo apt install curl
-sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/php/replicator.txt
+sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/trashnet/main/php/replicator.txt
 cd ..
 sudo chmod -R 0777 *
 cd html
@@ -165,5 +158,3 @@ sudo apt-get install python3-scipy
 sudo apt install python3-pip
 sudo pip3 install jupyter
 ```
-
-![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/qrcode-pages/recursiveweb.png)
