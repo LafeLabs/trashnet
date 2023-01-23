@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <!--
+
+TRASH MAGIC 
+
+EVERYTHING IS PHYSICAL
+EVERYTHING IS FRACTAL 
+EVERYTHING IS RECURSIVE
+
+NO MONEY
+NO MINING
+NO PROPERTY
+
+LOOK AT THE FUNGI
+LOOK AT THE INSECTS
+LANGUAGE IS HOW THE MIND PARSES REALITY
+
+
+
+    All Code, text, art, media, technology, and ideas CC0 PUBLIC DOMAIN
+
+
+
+    -->
+
+
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA4A8AAO/vAADqrwAA6q8AAOqvAADqrwAA6q8AAOqvAADqrwAA7+8AAMAHAADf9wAAwAcAAPu/AAD4PwAA" rel="icon" type="image/x-icon" />
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+   <title>BOARD</title>    
+</head>
+<body>    
+
+    <textarea id = "board"></textarea>
+
+    <a id = "homelink" href = "../">UP A LEVEL TO MAIN PAGE</a>
+
+    <a id = "qrcodelink" href = "qrcode.html">QR CODE LINK</a>
+
+<script>
+
+
+board = "";
+
+var httpc2 = new XMLHttpRequest();
+httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        board = this.responseText;
+        document.getElementById("board").value = board;
+    }
+};
+
+httpc2.open("GET", "fileloader.php?filename=board.txt", true);
+httpc2.send();
+
+document.getElementById("board").onkeyup = function() {
+        wall = this.value;
+        var httpc = new XMLHttpRequest();
+        var url = "filesaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        httpc.send("data="+encodeURIComponent(wall)+"&filename=board.txt");//send text to filesaver.php        
+}
+
+</script>
+<style>
+body{
+    background-color:black;
+}
+h1{
+    text-align:center;
+    font-size:4em;
+    font-family:helvetica;
+    position:absolute;
+    top:0px;
+}
+#board{
+    position:absolute;
+    width:80%;
+    height:80%;
+    left:10%;
+    top:10%;
+    background-color:#9f8767;
+    color:black;
+    font-family:Comic Sans MS;
+    overflow:scroll;
+}
+#homelink{
+    text-align:center;
+    font-family:helvetica;
+    font-size:2em;
+    width:80%;
+    margin:auto;
+    display:block;
+    border:solid;
+    border-radius:0.5em;
+    border-width:0.5em;
+    color:#ff2cb4;
+    border-color:#ff2cb4;
+}
+#qrcodelink{
+    position:absolute;
+    bottom:10px;
+    text-align:center;
+    font-family:helvetica;
+    font-size:2em;
+    width:80%;
+    margin:auto;
+    display:block;
+    border:solid;
+    border-radius:0.5em;
+    border-width:0.5em;
+    color:#ff2cb4;
+    border-color:#ff2cb4;
+    
+}
+</style>
+</body>
+</html>
+
+

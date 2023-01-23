@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA4A8AAO/vAADqrwAA6q8AAOqvAADqrwAA6q8AAOqvAADqrwAA7+8AAMAHAADf9wAAwAcAAPu/AAD4PwAA" rel="icon" type="image/x-icon" />
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+   <title>TRASH MAGIC QUEST CREATOR</title>    
+</head>
+<body>    
+
+    <a id = "homelink" href = "index.html">HOME</a>
+    <div id = "prompt">ENTER A TRASH MAGIC QUEST INTO THE BOARD BELOW AND PRESS THE POST QUEST BUTTON TO POST THE QUEST</div>
+    <textarea id = "board"></textarea>
+    <div id ="postbutton">POST QUEST</div>
+
+<div id = "quests"></div>
+<script>
+
+document.getElementById("board").value = "";
+
+var httpc2 = new XMLHttpRequest();
+httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("quests").innerHTML = this.responseText;
+    }
+};
+
+httpc2.open("GET", "fileloader.php?filename=quests.html", true);
+httpc2.send();
+    
+quests = document.getElementById("quests");
+
+document.getElementById("postbutton").onclick = function(){
+    //load quests from quests.html which is just paragraph elements
+    
+    quest = document.getElementById("board").value;
+    var httpc2 = new XMLHttpRequest();
+    httpc2.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("quests").innerHTML = this.responseText;
+            var newp = document.createElement("P");
+            newp.innerHTML = quest;
+            topp = quests.getElementsByTagName("P")[0];
+            quests.insertBefore(newp,topp);
+            questhtml = quests.innerHTML;
+            questhtml = questhtml.replace(/<\/p><p>/gi,"</p>\n<p>");
+            var httpc = new XMLHttpRequest();
+            var url = "filesaver.php";        
+            httpc.open("POST", url, true);
+            httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+            httpc.send("data="+encodeURIComponent(questhtml)+"&filename=quests.html");//send text to filesaver.php        
+            
+        }
+    };
+    
+    httpc2.open("GET", "fileloader.php?filename=quests.html", true);
+    httpc2.send();
+
+
+}
+
+
+
+</script>
+<style>
+body{
+    background-color:black;
+}
+h1{
+    text-align:center;
+    font-size:4em;
+    font-family:helvetica;
+    position:absolute;
+    top:0px;
+}
+#prompt{
+    position:absolute;
+    width:80%;
+    height:5em;
+    left:10%;
+    top:5em;
+    font-size:1.5em;
+    background-color:black;
+    color:#00ff00;
+    font-family:courier;
+    overflow:scroll;
+    
+}
+#board{
+    position:absolute;
+    width:80%;
+    height:5em;
+    left:10%;
+    top:12em;
+    background-color:#9f8767;
+    color:black;
+    font-family:Comic Sans MS;
+    overflow:scroll;
+}
+#quests{
+    position:absolute;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    top:50%;
+    overflow:scroll;
+    color:#00ff00;
+    font-family:courier;
+    z-index:0;
+}
+p{
+    text-align:justify;
+    padding:1em 1em 1em 1em;
+    font-size:1.5em;
+    border:solid;
+    display:block;
+    border-color:white;
+    border-width:10px;
+    border-radius:1em;
+    background-color:#0000ff;
+    color:white;
+    width:80%;
+    margin:auto;
+    margin-top:1em;
+
+}
+
+#postbutton{
+    position:absolute;
+    bottom:50%;
+    color:red;
+    font-size:3em;
+    border:solid;
+    border-color:red;
+    cursor:pointer;
+    left:5px;
+    right:5px;
+    text-align:center;
+    font-family:helvetica;
+
+}
+#postbutton:hover{
+    background-color:green;
+}
+#postbutton:active{
+    background-color:yellow;
+}
+
+#homelink{
+    top:10px;
+    position:absolute;
+    text-align:center;
+    font-family:helvetica;
+    font-size:2em;
+    width:80%;
+    left:10%;
+    margin:auto;
+    display:block;
+    border:solid;
+    border-radius:0.5em;
+    border-width:0.5em;
+    color:#ff2cb4;
+    border-color:#ff2cb4;
+}
+</style>
+</body>
+</html>

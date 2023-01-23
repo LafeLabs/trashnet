@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+    <head>
+             <meta charset="utf-8"/>
+
+<!--
+NO MONEY
+NO MINING
+NO PROPERTY
+EVERYTHING IS PHYSICAL 
+EVERYTHING IS RECURSIVE
+EVERYTHING IS FRACTAL
+LOOK AT THE INSECTS
+LOOK AT THE FUNGI
+LANGUGE IS HOW THE MIND PARSES REALITY
+
+-->
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAABEAAREQAAABERABERAAAAEREAAREAAAAREAAAABAAAQAAAAAAAQAQAAAAAAAAEQAAAAAAAAEREAAAAAAAAREQAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAM/zAACH4QAAh+EAAMfjAAD73wAA/b8AAP5/AAD8PwAA/D8AAP5/AAD//wAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
+<!--Stop Google:-->
+<META NAME="robots" CONTENT="noindex,nofollow">
+   <script src = "trashmagic.js"></script>
+</head>
+<body>
+
+
+<div id = "mainscroll">
+    <h1>RECURSIVE WEB FORK ENGINE</h1>
+        <a href = "../">UP</a>
+        <a href = "index.html">HOME</a>
+        <a href = "forkdestroyer.html">FORK DESTROYER</a>
+        <a id = "tmmainbutton">LOAD MAIN TRASH MAGIC REPLICATOR</a>
+        <a id = "rewebbutton" class=  "button">LOAD RECURSIVE WEB REPLICATOR</a>
+        <a id = "pibrarybutton" class=  "button">LOAD PIBRARY REPLICATOR</a>
+        <a id = "thingbutton" class=  "button">LOAD GEOMETRON THING REPLICATOR</a>
+        <a id = "iconmagicbutton" class=  "button">LOAD ICON MAGIC REPLICATOR</a>
+        <a id = "symbolmagicbutton" class=  "button">LOAD SYMBOL MAGIC REPLICATOR</a>
+        <a id = "adventurereplicator" class = "button">LOAD TRASH MAGIC WEB ADVENTURE REPLICATOR</a>
+        <a id = "businessreplicator" class = "button">LOAD EXCITING FRANCHISE OPPORTUNITY GAME REPLICATOR</a>
+
+
+        
+</div>
+<table id = "newtable">
+    <tr>
+        <td id = "label1">NEW FORK NAME:</td>
+        <td><input/><a id = "dirlink"></a></td>
+
+        <td id = "label2">EXTERNAL REPLICATOR URL:</td>
+        <td><input/></td>
+    </tr>
+</table>
+
+
+<script>
+
+
+
+directories = [];
+var httpc2 = new XMLHttpRequest();
+    httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        directories = JSON.parse(this.responseText);
+        for(var index = 0;index < directories.length;index++) {
+            var newa = document.createElement("A");
+            newa.innerHTML = directories[index] + "/";
+            newa.href = directories[index] + "/";
+            newa.className = "dirlink";
+            document.getElementById("mainscroll").appendChild(newa);
+        }
+
+        rainbow(document.getElementsByTagName("A"));
+
+    }
+};
+
+httpc2.open("GET", "dir.php?type=dir", true);
+httpc2.send();
+
+
+inputs = document.getElementById("newtable").getElementsByTagName("input");    
+
+inputs[0].onchange = function() {
+    var newa = document.getElementById("dirlink");
+    newa.innerHTML = "mkdir.php?dir=" + this.value;
+    newa.href = "mkdir.php?dir=" + this.value;
+    newa.style.color = "#ff2cb4";
+    newa.style.backgroundColor = "black";
+}
+
+inputs[0].value = "";    
+inputs[1].value = "";
+
+inputs[1].onchange = function(){
+    var newa = document.getElementById("dirlink");
+    newa.innerHTML += "&replicator=" + this.value; 
+    newa.href += "&replicator=" + this.value; 
+    newa.style.color = "#ff2cb4";
+    newa.style.backgroundColor = "black";
+
+    
+}
+
+titles = document.getElementsByTagName("H1");
+for(var index = 0;index < titles.length;index++){
+    rainbowstring(titles[index]);    
+}
+
+rainbowstring(document.getElementById("label1"));
+rainbowstring(document.getElementById("label2"));
+
+dirlink = document.getElementById("dirlink");
+
+replicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/php/replicator.txt";
+
+
+document.getElementById("tmmainbutton").onclick  = function(){
+    replicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/php/replicator.txt";
+    inputs[1].value = replicator;
+    dirlink.innerHTML += "&replicator=" + replicator; 
+    dirlink.href += "&replicator=" + replicator; 
+}
+
+document.getElementById("rewebbutton").onclick  = function(){
+    rewebreplicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/php/replicator.txt";
+    inputs[1].value = rewebreplicator;
+    dirlink.innerHTML += "&replicator=" + rewebreplicator; 
+    dirlink.href += "&replicator=" + rewebreplicator; 
+}
+
+
+document.getElementById("pibrarybutton").onclick  = function(){
+    rewebreplicator = "https://raw.githubusercontent.com/LafeLabs/pibrary/main/php/replicator.txt";
+    inputs[1].value = rewebreplicator;
+    dirlink.innerHTML += "&replicator=" + rewebreplicator; 
+    dirlink.href += "&replicator=" + rewebreplicator; 
+}
+
+
+document.getElementById("thingbutton").onclick  = function(){
+    rewebreplicator = "https://raw.githubusercontent.com/LafeLabs/thing/master/php/replicator.txt";
+    inputs[1].value = rewebreplicator;
+    dirlink.innerHTML += "&replicator=" + rewebreplicator; 
+    dirlink.href += "&replicator=" + rewebreplicator; 
+}
+
+
+document.getElementById("iconmagicbutton").onclick  = function(){
+    rewebreplicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/geometronmagic/iconmagic/php/replicator.txt";
+    inputs[1].value = rewebreplicator;
+    dirlink.innerHTML += "&replicator=" + rewebreplicator; 
+    dirlink.href += "&replicator=" + rewebreplicator; 
+}
+
+
+document.getElementById("symbolmagicbutton").onclick  = function(){
+    rewebreplicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/geometronmagic/symbolmagic/php/replicator.txt";
+    inputs[1].value = rewebreplicator;
+    dirlink.innerHTML += "&replicator=" + rewebreplicator; 
+    dirlink.href += "&replicator=" + rewebreplicator; 
+}
+
+
+document.getElementById("adventurereplicator").onclick  = function(){
+    rewebreplicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/adventure/php/replicator.txt";
+    inputs[1].value = rewebreplicator;
+    dirlink.innerHTML += "&replicator=" + rewebreplicator; 
+    dirlink.href += "&replicator=" + rewebreplicator; 
+}
+
+
+document.getElementById("businessreplicator").onclick  = function(){
+    rewebreplicator = "https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/excitingfranchiseopportunity/php/replicator.txt";
+    inputs[1].value = rewebreplicator;
+    dirlink.innerHTML += "&replicator=" + rewebreplicator; 
+    dirlink.href += "&replicator=" + rewebreplicator; 
+}
+
+
+
+
+</script>
+<style>
+    #mainscroll{
+        position:absolute;
+        overflow:scroll;
+        left:0px;
+        right:0px;
+        background-color:black;
+        top:0px;
+        bottom:5em;
+        border-width:10px;
+    }
+    h1{
+        text-align:center;
+        font-size:4em;
+        font-family:helvetica;
+    }
+    #mainscroll a{
+        text-align:center;
+        font-family:helvetica;
+        font-size:3em;
+        width:80%;
+        margin:auto;
+        display:block;
+        border:solid;
+        border-radius:0.5em;
+        border-width:0.5em;
+        color:black;
+        margin-top:1em;
+        margin-bottom:0.5em;
+        overflow-x:scroll;
+    }
+
+    body{
+        background-color:black;
+        color:#00ff00;
+        overflow:hidden;
+    }
+    input{
+        border-color:#00ff00;
+        color:#00ff00;
+        background-color:black;
+        font-family:courier;
+        font-size:18px;
+    }
+    table{
+        font-family:courier;
+    }
+    .button{
+        cursor:pointer;
+    }
+    .button:hover{
+        background-color:green;
+    }
+    .button:active{
+        background-color:yellow;
+    }
+    
+    .button{
+        cursor:pointer;
+        color:red;
+        font-family:courier;
+        font-size:1.5em;
+    }
+    #deleteonbutton{
+        cursor:pointer;
+        font-family:arial;
+        border:solid;
+        border-radius:0.3em;
+        width:10em;
+        position:absolute;
+        right:5px;
+        bottom:5px;
+    }
+    #newtable{
+        position:absolute;
+        left:5px;
+        bottom:5px;
+        font-size:2em;
+    }
+</style>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+        <!--
+
+TRASH MAGIC 
+
+EVERYTHING IS PHYSICAL
+EVERYTHING IS FRACTAL 
+EVERYTHING IS RECURSIVE
+
+NO MONEY
+NO MINING
+NO PROPERTY
+
+LOOK AT THE FUNGI
+LOOK AT THE INSECTS
+LANGUAGE IS HOW THE MIND PARSES REALITY
+
+
+
+    All Code, text, art, media, technology, and ideas CC0 PUBLIC DOMAIN
+
+
+
+    -->
+    
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA4A8AAO/vAADqrwAA6q8AAOqvAADqrwAA6q8AAOqvAADqrwAA7+8AAMAHAADf9wAAwAcAAPu/AAD4PwAA" rel="icon" type="image/x-icon" />
+
+
+       <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+   <title>TRASH MAGIC</title>    
+   <script src = "trashmagic.js"></script>
+  
+   <script src = "https://cdnjs.cloudflare.com/ajax/libs/plotly.js/1.33.1/plotly.min.js"></script>
+  <!--
+  https://plotly.com/javascript/
+  --> 
+</head>
+<body>    
+<a href = "https://plotly.com/javascript/">plotly javascript docs</a>
+<br>
+<a href ="index.html">home</a>
+<div id = "myDiv"></div>
+
+<script>
+
+var trace1 = {
+
+  x: [1, 2, 3, 4],
+
+  y: [10, 15, 13, 17],
+
+  type: 'scatter'
+
+};
+
+
+var trace2 = {
+
+  x: [1, 2, 3, 4],
+
+  y: [16, 5, 11, 9],
+
+  type: 'scatter'
+
+};
+
+var data = [trace1];
+
+jsondata = {};
+var httpdata = new XMLHttpRequest();
+httpdata.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        jsondata = JSON.parse(this.responseText);
+        loadjsondata();
+    }
+};
+httpdata.open("GET", "fileloader.php?filename=data/sensordata.txt", true);
+httpdata.send();
+
+function loadjsondata(){
+    temp_c = [];
+    temp_f = [];
+    timestamp = [];
+    for(var index = 0;index < jsondata.length;index++){
+        temp_c.push(jsondata[index].temp_c);
+        temp_f.push(jsondata[index].temp_f);
+        timestamp.push(jsondata[index].timestamp);
+
+    }
+    data[0].x = timestamp;
+    data[0].y = temp_f;
+    data.mode = "scatter";
+ //    data[0].mode = "markers";
+//    data[0].marker.color = "Red";
+    Plotly.newPlot('myDiv', data);
+    
+    datadata = encodeURIComponent(JSON.stringify(data,null,"    "));
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+datadata+"&filename=data/plotlyjson.txt");//send text to filesaver.php
+    
+}
+
+
+
+</script>
+</body>
+</html>
+
+
