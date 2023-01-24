@@ -161,5 +161,13 @@ sudo pip3 install jupyter
 ```
 qr code for the github repository with the replicator for the TRASHNET.
 
+## TRASH ROBOT SOCIALS
+
+ - [TIKTOK](https://tiktok.com/@trash_robot)
+ - [INSTAGRAM](https://www.instagram.com/lafelabs/)
+ - [MASTODON](https://kolektiva.social/@trashrobot)
+ - [GITHUB](https://github.com/lafelabs)
+ - [TRASHROBOT DOT ORG](https://trashrobot.org/)
+
 
 ![](https://raw.githubusercontent.com/LafeLabs/trashnet/main/trashmagic/qrcode-page.png)
