@@ -7,6 +7,8 @@
 
 TRASH MAGIC 
 
+TRASHNET
+
 EVERYTHING IS PHYSICAL
 EVERYTHING IS FRACTAL
 EVERYTHING IS RECURSIVE
@@ -19,26 +21,20 @@ LOOK AT THE FUNGI
 LOOK AT THE INSECTS
 LANGUAGE IS HOW THE MIND PARSES REALITY
 
-
-
     All Code, text, art, media, technology, and ideas CC0 PUBLIC DOMAIN
 
 
+    https://github.com/lafeLabs/trashnet
 
     -->
     
 <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA4A8AAO/vAADqrwAA6q8AAOqvAADqrwAA6q8AAOqvAADqrwAA7+8AAMAHAADf9wAAwAcAAPu/AAD4PwAA" rel="icon" type="image/x-icon" />
-
 
        <!--Stop Google:-->
     <META NAME="robots" CONTENT="noindex,nofollow">
    <title>TRASHNET</title>    
 </head>
 <body>    
-    <textarea id = "board"></textarea>
-    <div id = "links">
-    </div>
-    
     <table id = "inputtable">
         <tr>
             <td>NEW BOARD:</td>
@@ -46,6 +42,11 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
             <td><a id ="newboardlink"></a></td>
         </tr>
     </table>
+
+    <textarea id = "board"></textarea>
+    <div id = "links">
+    </div>
+    
 <script>
 
 
@@ -99,8 +100,8 @@ function loadfolders(){
             }
             for(var index = 0;index < files.length;index++){
                 var newa = document.createElement("A");
-                newa.href = files[index];
-                newa.innerHTML = files[index];
+                newa.href = files[index] + "/";
+                newa.innerHTML = files[index] + "/";
                 domelement.appendChild(newa);
                 locallinks.push(newa);
             }

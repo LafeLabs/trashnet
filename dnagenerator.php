@@ -18,7 +18,7 @@ dna.txt is a json formatted file which points to all the files in this system, w
     
     $htmlfiles = [];
     foreach($files as $value){
-        if(substr($value,-4) == ".css" || substr($value,-5) == ".html" || substr($value,-3) == ".md" || substr($value,-3) == ".py" || substr($value,-3) == ".sh" || substr($value,-3) == ".js"){
+        if(substr($value,-4) == ".txt" || substr($value,-4) == ".css" || substr($value,-5) == ".html" || substr($value,-3) == ".md" || substr($value,-3) == ".py" || substr($value,-3) == ".sh" || substr($value,-3) == ".js"){
             array_push($htmlfiles,$value);
         }
     }
