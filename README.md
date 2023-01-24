@@ -158,3 +158,7 @@ sudo apt-get install python3-scipy
 sudo apt install python3-pip
 sudo pip3 install jupyter
 ```
+qr code for the github repository with the replicator for the TRASHNET.
+
+
+![](https://raw.githubusercontent.com/LafeLabs/trashnet/main/trashmagic/qrcode-page.png)

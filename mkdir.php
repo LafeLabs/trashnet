@@ -16,11 +16,16 @@ else{
 
 
 
-echo "<a href = \"".$dirname."/replicator.php\">".$dirname."/replicator.php</a>";
+echo "<a href = \"".$dirname."/replicator.php\">CLICK THIS LINK TO REPLICATE THE TRASH NET BOARD</a>";
 
 ?>
 <style>
+body{
+    background-color:#9f8767;
+}
     a{
         font-size:3em;
+        font-family:Comic Sans MS;
+
     }
 </style>
