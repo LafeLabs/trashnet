@@ -8,6 +8,7 @@
         "icon.html",
         "index.html",
         "linkcreator.html",
+        "linkeditor.html",
         "links.html",
         "qrcode-page.html",
         "qrcode.html",

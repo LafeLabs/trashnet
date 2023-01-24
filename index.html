@@ -50,12 +50,6 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <script>
 
 
-titles = document.getElementsByTagName("H1");
-for(var index = 0;index < titles.length;index++){
-    rainbowstring(titles[index]);    
-}
-
-
 board = "";
 
 var httpc2 = new XMLHttpRequest();
@@ -124,8 +118,6 @@ document.getElementById("newboardinput").onchange = function() {
     var newa = document.getElementById("newboardlink");
     newa.innerHTML = "CLICK LINK TO CREATE NEW BOARD " + this.value;
     newa.href = "mkdir.php?dir=" + this.value;
-    newa.style.color = "#ff2cb4";
-    newa.style.backgroundColor = "black";
 }
 
 </script>
@@ -138,7 +130,7 @@ body{
     width:90%;
     height:48%;
     left:5%;
-    top:1em;
+    top:2em;
     background-color:#9f8767;
     color:black;
     font-family:Comic Sans MS;
@@ -154,7 +146,7 @@ body{
 }
 #inputtable{
     position:absolute;
-    bottom:0px;
+    top:0px;
     font-size:1em;
     background-color:#9f8767;
     font-family:Comic Sans MS;
@@ -180,9 +172,9 @@ input{
     overflow-x:scroll;
 }
 #newboardlink{
-    background-color:#9f8767;
+    background-color:black;
     font-family:Comic Sans MS;
-    
+    color:blue;
 }
 img{
     display:block;

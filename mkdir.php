@@ -26,6 +26,6 @@ body{
     a{
         font-size:3em;
         font-family:Comic Sans MS;
-
+        color:blue;
     }
 </style>
