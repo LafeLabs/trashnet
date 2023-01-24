@@ -93,6 +93,8 @@ function drawtable(){
         
         var newtd = document.createElement("TD");
         newtd.innerHTML = "COPY";
+                newtd.className = "button";
+
         newtr.appendChild(newtd);
         newtd.onclick = function(){
             //copy
@@ -109,15 +111,39 @@ function drawtable(){
 
         var newtd = document.createElement("TD");
         newtd.innerHTML = "DELETE";
+        newtd.className = "button";
         newtr.appendChild(newtd);
         newtd.onclick = function(){
             //delete
-            linkindex = parseInt(this.parentNode.id.substring(4));
-            links[linkindex].remove();
-            links = document.getElementById("links").getElementsByTagName("A");
-            drawtable();
-            savelinks();
-            
+            if(links.length > 1){
+                linkindex = parseInt(this.parentNode.id.substring(4));
+                links[linkindex].remove();
+                links = document.getElementById("links").getElementsByTagName("A");
+                drawtable();
+                savelinks();
+            }
+            else{
+                //if it has only one element, clear and repopulate with default
+                links[0].remove();                
+                var newa = document.createElement("A");
+                newa.innerHTML = "UP A LEVEL";
+                newa.href = "../";
+                document.getElementById("links").appendChild(newa);
+                var newa = document.createElement("A");
+                newa.innerHTML = "LINK EDITOR";
+                newa.href = "linkeditor.html";
+                document.getElementById("links").appendChild(newa);
+                var newa = document.createElement("A");
+                newa.innerHTML = "WEB EDITOR";
+                newa.href = "webeditor.html";
+                document.getElementById("links").appendChild(newa);
+
+                links = document.getElementById("links").getElementsByTagName("A");
+                drawtable();
+                savelinks();
+            }
+
+    
         }
 
     }
@@ -140,10 +166,18 @@ function savelinks(){
 
 </script>
 <style>
+body,input,table{
+    background-color:#9f8767;
+    font-family:Comic Sans MS;
+}
+a{
+    display:block;
+    color:blue;
+}
 
     .button{
         cursor:pointer;
-        color:red;
+        border:solid;
     }
     .button:hover{
         background-color:green;
@@ -151,9 +185,6 @@ function savelinks(){
     .button:active{
         background-color:yellow;
     }
-a{
-    display:block;
-}
 </style>
 </body>
 </html>

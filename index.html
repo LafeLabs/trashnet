@@ -77,7 +77,6 @@ var httpc2 = new XMLHttpRequest();
 httpc2.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         document.getElementById("links").innerHTML = this.responseText;
-        rainbow(document.getElementsByTagName("A"));
         loadfolders();
     }
 };
@@ -106,7 +105,6 @@ function loadfolders(){
                 domelement.appendChild(newa);
                 locallinks.push(newa);
             }
-            rainbow(locallinks);
         }
     };
     httpfiles.open("GET", "dirdir.php", true);
@@ -122,9 +120,17 @@ document.getElementById("newboardinput").onchange = function() {
 
 </script>
 <style>
-body{
-    background-color:black;
+body,input,table{
+    background-color:#9f8767;
+    font-family:Comic Sans MS;
 }
+a{
+    display:block;
+    color:blue;
+    margin-left:5em;
+    margin-bottom:1em;
+}
+
 #board{
     position:absolute;
     width:90%;
@@ -135,6 +141,8 @@ body{
     color:black;
     font-family:Comic Sans MS;
     overflow:scroll;
+    border:solid;
+    border-width:5px;
 }
 #links{
     position:absolute;
@@ -152,38 +160,7 @@ body{
     font-family:Comic Sans MS;
     
 }
-input{
-    background-color:#9f8767;
-    font-family:Comic Sans MS;
-}
-#links a{
-    text-align:center;
-    font-family:helvetica;
-    font-size:3em;
-    width:80%;
-    margin:auto;
-    display:block;
-    border:solid;
-    border-radius:0.5em;
-    border-width:0.5em;
-    color:black;
-    margin-top:1em;
-    margin-bottom:0.5em;
-    overflow-x:scroll;
-}
-#newboardlink{
-    background-color:black;
-    font-family:Comic Sans MS;
-    color:blue;
-}
-img{
-    display:block;
-    max-width:50%;
-    margin:auto;
-    margin-top:2em;
-    margin-bottom:2em;
-    background-color:#B0916E;
-}
+
 
 </style>
 </body>
