@@ -60,7 +60,12 @@ foreach($dna->javascript as $value){
 ?>
 <a href = "index.html">CLICK TO GO TO PAGE</a>
 <style>
-a{
-    font-size:3em;
+body{
+    background-color:#9f8767;
 }
+    a{
+        font-size:3em;
+        font-family:Comic Sans MS;
+        color:blue;
+    }
 </style>
