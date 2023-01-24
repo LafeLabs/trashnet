@@ -12,6 +12,7 @@ We aim to abolish all mining and other resource extraction by 2050, replacing th
  - [HOME](index.html)
  - [http://localhost](http://localhost)
  - [TRASH NET REPLICATOR ON GITHUB](https://github.com/LafeLabs/trashnet)
+ - [replicatr.txt](https://raw.githubusercontent.com/LafeLabs/trashnet/main/php/replicator.txt)
  - [WWW DOT SLOANS LAKE DOT ART](https://www.sloanslake.art)
  - [WWW DOT SOUTH BROADWAY DOT NET](https://www.southbroadway.net)
  - [WWW DOT SOUTH PLATTE DOT NET](https://www.southplatte.net)
