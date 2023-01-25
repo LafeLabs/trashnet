@@ -17,6 +17,7 @@ We aim to abolish all mining and other resource extraction by 2050, replacing th
  - [WWW DOT SOUTH PLATTE DOT NET](https://www.southplatte.net)
  - [WWW DOT TRASH ROBOT DOT ORG](https://www.trashrobot.org)
  - [WWW DOT QUANTUM ART DOT ORG](https://www.quantumart.org)
+ - [BIPM DOT TRASH PHYSICS DOT ORG](https://bipm.trashphysics.org)
 
 self-replicating web pages.
 
