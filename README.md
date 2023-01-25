@@ -6,16 +6,17 @@ The TRASH NET is self-replicating media made from trash. We take donations of co
 
 In the TRASHNET we put all the trash on the network.  We aim to transform all of the trash made by all of humanity at the global level into hypertext. Trash will link to documents which link to how to metabolize the trash into a replication economy. 
 
-
 We aim to abolish all mining and other resource extraction by 2050, replacing the consumer economy with a replication economy.
 
  - [HOME](index.html)
  - [http://localhost](http://localhost)
  - [TRASH NET REPLICATOR ON GITHUB](https://github.com/LafeLabs/trashnet)
- - [replicatr.txt](https://raw.githubusercontent.com/LafeLabs/trashnet/main/php/replicator.txt)
+ - [replicator.txt](https://raw.githubusercontent.com/LafeLabs/trashnet/main/php/replicator.txt)
  - [WWW DOT SLOANS LAKE DOT ART](https://www.sloanslake.art)
  - [WWW DOT SOUTH BROADWAY DOT NET](https://www.southbroadway.net)
  - [WWW DOT SOUTH PLATTE DOT NET](https://www.southplatte.net)
+ - [WWW DOT TRASH ROBOT DOT ORG](https://www.trashrobot.org)
+ - [WWW DOT QUANTUM ART DOT ORG](https://www.quantumart.org)
 
 self-replicating web pages.
 
