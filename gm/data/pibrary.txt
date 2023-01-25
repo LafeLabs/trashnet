@@ -1,0 +1,23 @@
+{
+    "forks": [
+        "actionmagic",
+        "arduino",
+        "bookofgeometron",
+        "bookofgeometronfirst",
+        "bookofscales",
+        "edgemedia",
+        "edgenetwork",
+        "edgephysics",
+        "factory",
+        "fileset",
+        "geometronmagic",
+        "gutenberg",
+        "hype",
+        "pibrary",
+        "quantumshitpost",
+        "street",
+        "tmacb",
+        "trashphysics",
+        "voxel"
+    ]
+}
