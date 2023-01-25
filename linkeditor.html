@@ -102,7 +102,7 @@ function drawtable(){
             var newa = document.createElement("A");
             newa.innerHTML = links[linkindex].innerHTML;
             newa.href = links[linkindex].href;
-            document.getElementById("links").insertBefore(newa,links[0]);
+            document.getElementById("links").insertBefore(newa,links[linkindex]);
             links = document.getElementById("links").getElementsByTagName("A");
             drawtable();
             savelinks();
