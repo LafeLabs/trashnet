@@ -4,7 +4,9 @@
 
 ### ***a self-replicating book about self-replicating media***
 
-Read the book online in the browser first.  Podcast episodes with readings of the chapters are linked.  
+We are crowd funding this book as a self-replicating set of actions which generate revenue for replicators.  This book is PUBLIC DOMAIN with no restrictions whatsoever.  YOU can replicate the physical hard copy and sell it, keeping all the money for yourself in order to help you in whatever you want to do.  
+
+The first action is simply to read the book in a web browser for free.  Alternatively you can listen to podcast episodes with readings of the chapters which are linked.  See the chapters below:
 
 by [Trash Robot](https://www.trashrobot.org)
 
@@ -22,22 +24,27 @@ by [Trash Robot](https://www.trashrobot.org)
  12. [Community Actions](scrolls/actions)
  13. [The Path of Geometron](scrolls/path)
 
-Print it out using the People's Printer, bind it, color it in, and sell it.  Repeat as needed, sell as many copies as you feel like, keep all the money.  
+The second replication action is to print out a .pdf using the People's Printer, bind it, color it in, and sell it.  In the Poeple's Printer, you ask someone with FREE access to a printer to print out a copy of the document for you and donate it to your cause.  Ask them to help us all to build a new civilization from trash! 
 
+Having printed this out, either get a 3 ring binder out of the trash or fabricate some type of binding from other trash materials.  Color in the illustrations in the book, and add your own to the margins. Sell the finished trash-bound FREE book to someone as an art book and also as a replicator of our ideas.  Make another one and sell that! Teach the next person to replicate the whole set and also sell books! 
+
+Repeat as needed, sell as many copies as you feel like, keep all the money.  See the links below for the .pdf files to print:
 
  - [letter size pdf](https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometronmagic/main-large.pdf)
  - [6x9 pdf](https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometronmagic/main.pdf)
  - [tiny pdf](https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometronmagic/main-tiny.pdf)
 
- 3. After book replication has proven to generate more money than it costs to buy books, buy the hard copy from lulu press.  Color that in, decorate it, sell it also.
+ 
+After book replication has proven to generate more money than it costs to buy books, buy the hard copy from lulu press.  Color that in, decorate it, sell it also:
 
 [buy hardcopy to support TRASH ROBOT](https://www.lulu.com/en/us/shop/trash-robot/geometron-magic/paperback/product-y6p96w.html)
 
-
-
-the scroll set replicator for the copy of this book which exists at github.com/lafelabs/trashnet/ in the "gm" folder is as follows:
+To replicate a copy of the book on a TRASHNET server, create a fork and go to the replicator.html page and click to copy the pibrary replicator and then click on replicator.php.  Then go to the page scrollset.html and put the following text into the field marked "source server":
 
 ```
 https://raw.githubusercontent.com/LafeLabs/trashnet/main/gm/
 ```
+
+To create physical trash-based hyperlinks to the book, print out the following page of QR codes which link to [gm.trashrobot.org](https://gm.trashrobot.org), put them on trash with the book title, author, art, links, any other information including call numbers in both loc and dewey decimal.  Dewey Decimal call number is 516 TRASH and Library of Congress call number is QA699.TRASH(both of these are fake).  Create these trash based hyperlinks to the books and distribute in public libraries, little free libraries, bookstores, university libraries, coffee shops, art galleries, zine libraries, book sections of grocery and department stores, and anywhere else books are shared, sold, or distributed.  
+
 ![](https://raw.githubusercontent.com/LafeLabs/trashnet/main/trashmagic/gm-book-qrcode.png)
