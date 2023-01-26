@@ -1,16 +1,10 @@
 # [Geometron Magic](https://gm.trashrobot.org)
 
-### ***a self-replicating book about self-replicating media***
-
 <img style = "background-color:#9f8767" src ="https://i.imgur.com/SfVfiHM.png"/>
 
- 1. Read the book online in the browser
- 2. Print it out using the People's Printer, bind it, color it in, and sell it.  Repeat as needed, sell as many copies as you feel like, keep all the money.  
- 3. After book replication has proven to generate more money than it costs to buy books, buy the hard copy from lulu press.  Color that in, decorate it, sell it also.
+### ***a self-replicating book about self-replicating media***
 
-[buy hardcopy to support TRASH ROBOT](https://www.lulu.com/en/us/shop/trash-robot/geometron-magic/paperback/product-y6p96w.html)
-
-[letter size pdf](https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometronmagic/main-large.pdf)
+Read the book online in the browser first.  Podcast episodes with readings of the chapters are linked.  
 
 by [Trash Robot](https://www.trashrobot.org)
 
@@ -28,10 +22,22 @@ by [Trash Robot](https://www.trashrobot.org)
  12. [Community Actions](scrolls/actions)
  13. [The Path of Geometron](scrolls/path)
 
+Print it out using the People's Printer, bind it, color it in, and sell it.  Repeat as needed, sell as many copies as you feel like, keep all the money.  
+
+
+ - [letter size pdf](https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometronmagic/main-large.pdf)
+ - [6x9 pdf](https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometronmagic/main.pdf)
+ - [tiny pdf](https://raw.githubusercontent.com/LafeLabs/pibrary/main/geometronmagic/main-tiny.pdf)
+
+ 3. After book replication has proven to generate more money than it costs to buy books, buy the hard copy from lulu press.  Color that in, decorate it, sell it also.
+
+[buy hardcopy to support TRASH ROBOT](https://www.lulu.com/en/us/shop/trash-robot/geometron-magic/paperback/product-y6p96w.html)
+
+
 
 the scroll set replicator for the copy of this book which exists at github.com/lafelabs/trashnet/ in the "gm" folder is as follows:
 
 ```
 https://raw.githubusercontent.com/LafeLabs/trashnet/main/gm/
 ```
-
+![](https://raw.githubusercontent.com/LafeLabs/trashnet/main/trashmagic/gm-book-qrcode.png)
