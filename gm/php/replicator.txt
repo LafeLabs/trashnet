@@ -1,6 +1,6 @@
     <?php
     
-    $dnaurl = "https://raw.githubusercontent.com/LafeLabs/pibrary/main/data/dna.txt";
+    $dnaurl = "https://raw.githubusercontent.com/LafeLabs/trashnet/main/gm/data/dna.txt";
     
     if(isset($_GET["dna"])){
         $dnaurl = $_GET["dna"];
@@ -26,7 +26,7 @@
     mkdir("geometroncoin");
 
 
-    copy("https://raw.githubusercontent.com/LafeLabs/pibrary/main/php/replicator.txt","replicator.php");
+    copy("https://raw.githubusercontent.com/LafeLabs/trashnet/main/gm/php/replicator.txt","replicator.php");
     copy("https://raw.githubusercontent.com/LafeLabs/pibrary/main/imageset/php/replicator.txt","imageset/replicator.php");
     copy("https://raw.githubusercontent.com/LafeLabs/pibrary/main/fileset/php/replicator.txt","fileset/replicator.php");    
     copy("https://raw.githubusercontent.com/LafeLabs/pibrary/main/symbolset/php/replicator.txt","symbolset/replicator.php");

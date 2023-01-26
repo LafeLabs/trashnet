@@ -232,17 +232,20 @@ document.getElementById("modebutton2").onclick = function(){
     modeswitch();
 }
 
+
+    
+
 modeswitch();
 function modeswitch(){
     if(mode == "dark"){
         mode = "light";
-        document.body.style.backgroundColor = "white";
-        document.getElementById("scrollscroll").style.backgroundColor = "#f0f0f0";
+        document.body.style.backgroundColor = "#9f8767";
+        document.getElementById("scrollscroll").style.backgroundColor = "#9f8767";
         document.getElementById("scrollscroll").style.color = "black";
 
         document.getElementById("scrollinput").style.color = "black";
-        document.getElementById("scrollinput").style.backgroundColor = "white";       
-        document.getElementById("scrollsbox").style.backgroundColor = "white";
+        document.getElementById("scrollinput").style.backgroundColor = "#9f8767";       
+        document.getElementById("scrollsbox").style.backgroundColor = "#9f8767";
         document.getElementById("scrollsbox").style.color = "black";        
     }
     else{
@@ -357,12 +360,18 @@ document.getElementById("hidebutton").onclick = function(){
 .editlinks{
 /*    display:none;*/
 }
+a{
+    color:blue;
+}
 pre{
   overflow:scroll;
 }
 body{
     overflow:hidden;
     background-color:black
+    background-color:#9f8767;
+    font-family:Comic Sans MS;
+
 }
 input{
     display:block;
@@ -398,12 +407,12 @@ input{
     padding-right:1em;
     position:absolute;
     overflow:scroll;
-    background-color:black;
+    background-color:#9f8767;
     color:#00ff00;
     font-size:2em;
 }
 #scrollscroll a{
-    color:#ff2cb4;
+    color:blue;
 }
 #scrollscroll img{
     max-width:80%;
@@ -428,7 +437,7 @@ h1,h2,h3,h4{
 }
 #scrollsbox{
     position:absolute;
-    background-color:#808080;
+    background-color:#9f8767;
     color:black;
     overflow:scroll;
 }
