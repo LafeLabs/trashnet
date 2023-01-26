@@ -8,7 +8,7 @@ In the TRASHNET we put all the trash on the network.  We aim to transform all of
 
 We aim to abolish all mining and other resource extraction by 2050, replacing the consumer economy with a replication economy.
 
- - [GEOMETRON MAGIC SELF-REPILCATING BOOK](https://gm.trashrobot.org)
+ - [GEOMETRON MAGIC SELF-REPLICATING BOOK](https://gm.trashrobot.org)
  - [HOME](index.html)
  - [http://localhost](http://localhost)
  - [TRASH NET REPLICATOR ON GITHUB](https://github.com/LafeLabs/trashnet)
