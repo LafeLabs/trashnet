@@ -1,6 +1,7 @@
 {
     "html": [
         "README.md",
+        "board.html",
         "board.txt",
         "forkdestroyer.html",
         "index.html",
@@ -11,6 +12,9 @@
         "readme.html",
         "readmeeditor.html",
         "replicators.html",
+        "trashmagic.css",
+        "trashmagic.html",
+        "trashmagic.js",
         "trashrobot.html",
         "webdestroyer.html",
         "webeditor.html"
