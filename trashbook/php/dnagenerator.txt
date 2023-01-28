@@ -70,4 +70,10 @@ dna.txt is a json formatted file which points to all the files in this system, w
 
 ?>
 </pre>
+<style>
+    body{
+        font-family:Comic Sans MS;
+        background-color:#9f8767;
+    }
+</style>
 

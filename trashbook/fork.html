@@ -37,21 +37,7 @@ LANGUGE IS HOW THE MIND PARSES REALITY
         <td>external replicator url</td>
         <td><input/></td>
     </tr>
-    <tr>
-        <td class = "button" id = "filesetbutton">file set replicator</td>
-    </tr>
-    <tr>
-        <td class = "button" id = "imagesetbutton">image set replicator</td>
-    </tr>
-    <tr>
-        <td class = "button" id = "codesetbutton">code set replicator</td>
-    </tr>
-    <tr>
-        <td class = "button" id = "symbolsetbutton">symbol set replicator</td>
-    </tr>
-    <tr>
-        <td class = "button" id = "mapbookbutton">map book replicator</td>
-    </tr>
+
 </table>
 
 <ul id = "mainlist">
@@ -98,39 +84,7 @@ var httpc2 = new XMLHttpRequest();
 httpc2.open("GET", "dir.php?type=dir", true);
 httpc2.send();
 
-document.getElementById("filesetbutton").onclick = function(){
-    inputs[1].value = filesetreplicator;
-    dirlink.innerHTML = "mkdir; dir=" + dir + "; replicator=fileset"; 
-    dirlink.href = "mkdir.php?dir=" + dir + "&replicator=" + filesetreplicator;
-}
 
-document.getElementById("imagesetbutton").onclick = function(){
-    replicator = imagesetreplicator;
-    inputs[1].value = replicator;
-    dirlink.innerHTML = "mkdir; dir=" + dir + "; replicator=imageset"; 
-    dirlink.href = "mkdir.php?dir=" + dir + "&replicator=" + replicator;
-}
-
-document.getElementById("codesetbutton").onclick = function(){
-    replicator = codesetreplicator;
-    inputs[1].value = replicator;
-    dirlink.innerHTML = "mkdir; dir=" + dir + "; replicator=codeset"; 
-    dirlink.href = "mkdir.php?dir=" + dir + "&replicator=" + replicator;
-}
-
-document.getElementById("symbolsetbutton").onclick = function(){
-    replicator = symbolsetreplicator;
-    inputs[1].value = replicator;
-    dirlink.innerHTML = "mkdir; dir=" + dir + "; replicator=symbolset"; 
-    dirlink.href = "mkdir.php?dir=" + dir + "&replicator=" + replicator;
-}
-
-document.getElementById("mapbookbutton").onclick = function(){
-    replicator = mapbookreplicator;
-    inputs[1].value = replicator;
-    dirlink.innerHTML = "mkdir; dir=" + dir + "; replicator=mapbook"; 
-    dirlink.href = "mkdir.php?dir=" + dir + "&replicator=" + replicator;
-}
 
 inputs = document.getElementById("newtable").getElementsByTagName("input");    
 
@@ -190,9 +144,16 @@ document.getElementById("deleteonbutton").onclick = function(){
 <style>
     body{
         font-size:2em;
+        background-color:#9f8767;
+        font-family:Comic Sans MS;
+    }
+    input{
+        background-color:#9f8767;
+        font-family:Comic Sans MS;
+        
     }
     table{
-        font-family:courier;
+
     }
     .button{
         cursor:pointer;
@@ -212,7 +173,6 @@ document.getElementById("deleteonbutton").onclick = function(){
     }
     #deleteonbutton{
         cursor:pointer;
-        font-family:arial;
         border:solid;
         border-radius:0.3em;
         width:10em;

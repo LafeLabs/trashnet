@@ -13,3 +13,15 @@ foreach ($files1 as $value) {
 }
 
 ?><a style = "font-size:10em" href = "editor.php">editor.php</a>
+
+<style>
+a{
+        font-family:Comic Sans MS;
+    
+}
+    body{
+        background-color:#9f8767;
+        font-family:Comic Sans MS;
+
+    }
+</style>

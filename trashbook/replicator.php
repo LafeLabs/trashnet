@@ -1,6 +1,6 @@
     <?php
     
-    $dnaurl = "https://raw.githubusercontent.com/LafeLabs/pibrary/main/data/dna.txt";
+    $dnaurl = "https://raw.githubusercontent.com/LafeLabs/trashnet/main/trashbook/data/dna.txt";
     
     if(isset($_GET["dna"])){
         $dnaurl = $_GET["dna"];
@@ -16,25 +16,9 @@
     mkdir("scrolls");
     mkdir("iconsymbols");
     
-    mkdir("imageset");
-    mkdir("symbolset");
-    mkdir("codeset");
-    mkdir("mapbook");
-    mkdir("chaos");
-    mkdir("iconset");
-    mkdir("fileset");
-    mkdir("geometroncoin");
 
-
-    copy("https://raw.githubusercontent.com/LafeLabs/pibrary/main/php/replicator.txt","replicator.php");
-    copy("https://raw.githubusercontent.com/LafeLabs/pibrary/main/imageset/php/replicator.txt","imageset/replicator.php");
-    copy("https://raw.githubusercontent.com/LafeLabs/pibrary/main/fileset/php/replicator.txt","fileset/replicator.php");    
-    copy("https://raw.githubusercontent.com/LafeLabs/pibrary/main/symbolset/php/replicator.txt","symbolset/replicator.php");
-    copy("https://raw.githubusercontent.com/LafeLabs/pibrary/main/codeset/php/replicator.txt","codeset/replicator.php");
-    copy("https://raw.githubusercontent.com/LafeLabs/pibrary/main/mapbook/php/replicator.txt","mapbook/replicator.php");
-    copy("https://raw.githubusercontent.com/LafeLabs/pibrary/main/iconset/php/replicator.txt","iconset/replicator.php");
-    copy("https://raw.githubusercontent.com/LafeLabs/pibrary/main/chaos/php/replicator.txt","chaos/replicator.php");
-    copy("https://raw.githubusercontent.com/LafeLabs/geometroncoin/main/php/replicator.txt","geometroncoin/replicator.php");
+    copy("https://raw.githubusercontent.com/LafeLabs/trashnet/main/trashbook/php/replicator.txt","replicator.php");
+    
     
     
     foreach($dna->html as $value){
@@ -82,6 +66,10 @@
     ?>
     <a href = "index.html">CLICK TO GO TO PAGE</a>
     <style>
+    body{
+        background-color:#9f8767;
+        font-family:Comic Sans MS;
+    }
     a{
         font-size:3em;
     }

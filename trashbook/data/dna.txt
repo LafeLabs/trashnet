@@ -1,17 +1,32 @@
 {
     "html": [
         "README.md",
+        "board.html",
+        "books.html",
+        "distro.html",
         "fork.html",
+        "forkdestroyer.html",
         "index.html",
+        "label.html",
+        "linkeditor.html",
+        "links.html",
+        "podcast.html",
         "publicdark.html",
         "publicpage.html",
+        "qrcode-page.html",
         "qrcode.html",
         "readme.html",
+        "readmeeditor.html",
+        "replicators.html",
         "scrolldelete.html",
         "scrolleditor.html",
         "scrollset.html",
         "set.html",
-        "textconvert.html"
+        "textconvert.html",
+        "trashmagic.html",
+        "trashrobot.html",
+        "webdestroyer.html",
+        "webeditor.html"
     ],
     "data": [
         "dna.txt",
@@ -23,6 +38,7 @@
         "copy.txt",
         "deletefile.txt",
         "dir.txt",
+        "dirdir.txt",
         "dnagenerator.txt",
         "editor.txt",
         "fileloader.txt",
@@ -37,6 +53,7 @@
         "publicconvert.txt",
         "publicconvertdark.txt",
         "rdelete.txt",
+        "rdir.txt",
         "removephp.txt",
         "replicator.txt",
         "scroll2tex.txt",
@@ -47,8 +64,7 @@
         "user.txt"
     ],
     "scrolls": [
-        "home",
-        "links"
+        "home"
     ],
     "iconsymbols": [
         "chaos.svg",
