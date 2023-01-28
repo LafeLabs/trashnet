@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!--
+
+        EVERYTHING IS PHYSICAL
+        EVERYTHING IS FRACTAL
+        EVERYTHING IS RECURSIVE
+        NO MONEY
+        MO MINING
+        NO PROPERTY
+        LOOK AT THE INSECTS
+        LOOK AT THE FUNGI
+        LANGUAGE IS HOW THE MIND PARSES REALITY
+
+    -->
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP//AP///wANAP8A5Dz6ABueRwAAt/8A6BonABo86AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREREREREREAAAEREREREQCIgREREd3dwAAB3d3d3d3d3d3d3d3d3d3d3d3d3VVVVVVVQAFVVAAVVVQIiBRAiIBEQIAIBECAAERAgAgFgIABmYCIiBmAiIGZgIiIGYCIgZmYCIAaIAAMzMzAAiIiIiIiIiIiIiIiIiIiIiIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+
+</head>
+<body>    
+<a href= "index.html">home</a>
+<a href= "editor.php">editor.php</a>
+<textarea id = "textin"></textarea>
+<div id = "button">BUTTON</div>
+<textarea id = "textout"></textarea>
+
+<script>
+
+document.getElementById("button").onclick = function(){
+    textin = document.getElementById("textin").value;
+    
+
+    foo = textin.split("CHAPTER");
+    textout = foo[11];
+    
+    document.getElementById("textout").value = textout;
+}
+
+
+</script>
+<style>
+a{
+    color:#0000ff;
+    background-color:white;
+    margin:5em;
+}
+body{
+    background-color:#808080;
+}
+#textin{
+    position:absolute;
+    left:10px;
+    bottom:50px;
+    width:40%;
+    height:40%;
+    font-family:courier;
+    background-color:black;
+    color:#00ff00;
+}
+#textout{
+    position:absolute;
+    right:10px;
+    bottom:50px;
+    width:40%;
+    height:40%;
+    font-family:courier;
+    background-color:black;
+    color:#00ff00;
+}
+
+#button{
+    cursor:pointer;
+    text-align:center;
+    width:10em;
+    border:solid;
+    border-radius:5px;
+    position:absolute;
+    left:45%;
+    top:40%;
+}
+#button:hover{
+    background-color:green;    
+}
+#button:active{
+    background-color:yellow;    
+}
+
+</style>
+</body>
+</html>

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
+<head>  
     <meta charset="utf-8">
 
         <!--
@@ -39,47 +39,34 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <body>    
 <div id = "mainscroll">
     
-    <h1>TRASH MAGIC LITTLE FREE BOOK LIBRARY</h1>
-    
-    
-    <a href = "webeditor.html">WEB CODE EDITOR</a>
-    <a href = "https://github.com/lafeLabs/trashnet">TRASHNET SERVER REPLICATOR AT GITHUB.COM</a>
-    <a href = "copy.php?from=books.html&to=index.html">COPY BOOKS PAGE INTO INDEX.HTML</a>
-    <a href=  "index.html">HOME</a>
-    <a href  = "qrcode.html">QR CODES</a>
+    <h1>TRASH MAGIC</h1>
     
 
 <p>
-Gather books.  Put them in the Library to share. 
+    The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
 </p>
 
-<p>To create a TRASHNET little free library, make a TRASHNET server using the instructions linked above to the Gihtub, and create a subdomain for the library which points to a folder in "/var/www/html" on the server. Copy this page "index.html".  Create a symbolic link using the linux command ln to make a desktop shortcut for the books folder so that it is easy to find as you post books to the folder.  Create signs which point to the URL for your library(choose an easy to use subdomain), and add QR codes using the links for that.</p>
 
-<pre>
-    ln -s /var/www/html/sloanslakedotart/books ~/Desktop/sloanslakebooks
-</pre>
+    <a href = "webeditor.html">WEB EDITOR</a>
+    <a href = "index.html">HOME</a>
 
-<h1>BOOKS</h1>
-<div id = "books"></div>
-
-
+<div id = "images"></div>
 
 </div>
 <script>
 
-googleyeyes(8);
+googleyeyes(10);
 
 titles = document.getElementsByTagName("H1");
 for(var index = 0;index < titles.length;index++){
     rainbowstring(titles[index]);    
 }
 
-
 rainbow(document.getElementsByTagName("A"));
 
-
-//create a folder called "books" below this one, and put the books in there.
-listfiles(document.getElementById("books"),"books");
+//rlistfiles(document.getElementById("mainscroll"),"media/podcasts");
+//listfiles(document.getElementById("mainscroll"),"media/podcasts");
+listimages(document.getElementById("images"),"trashmagic");
 
 
 </script>

@@ -1,0 +1,66 @@
+{
+    "html": [
+        "README.md",
+        "fork.html",
+        "index.html",
+        "publicdark.html",
+        "publicpage.html",
+        "qrcode.html",
+        "readme.html",
+        "scrolldelete.html",
+        "scrolleditor.html",
+        "scrollset.html",
+        "set.html",
+        "textconvert.html"
+    ],
+    "data": [
+        "dna.txt",
+        "pibrary.txt",
+        "scrollset.txt",
+        "set.txt"
+    ],
+    "php": [
+        "copy.txt",
+        "deletefile.txt",
+        "dir.txt",
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "hyperreplicator.txt",
+        "ipaddress.txt",
+        "mapeditor.txt",
+        "mathuser.txt",
+        "mkdir.txt",
+        "pibrarygenerator.txt",
+        "pibraryreplicator.txt",
+        "publicconvert.txt",
+        "publicconvertdark.txt",
+        "rdelete.txt",
+        "removephp.txt",
+        "replicator.txt",
+        "scroll2tex.txt",
+        "scrolleditor.txt",
+        "scrollsetreplicator.txt",
+        "setreplicator.txt",
+        "text2php.txt",
+        "user.txt"
+    ],
+    "scrolls": [
+        "home",
+        "links"
+    ],
+    "iconsymbols": [
+        "chaos.svg",
+        "delete.svg",
+        "edit.svg",
+        "fork.svg",
+        "hidemenu.svg",
+        "home.svg",
+        "lightdark.svg",
+        "scroll.svg",
+        "showmenu.svg",
+        "uplink.svg",
+        "www.svg"
+    ]
+}

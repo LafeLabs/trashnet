@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+   <!--
+
+TRASH MAGIC 
+
+EVERYTHING IS PHYSICAL
+EVERYTHING IS FRACTAL 
+EVERYTHING IS RECURSIVE
+
+NO MONEY
+NO MINING
+NO PROPERTY
+
+LOOK AT THE FUNGI
+LOOK AT THE INSECTS
+LANGUAGE IS HOW THE MIND PARSES REALITY
+
+
+
+    All Code, text, art, media, technology, and ideas CC0 PUBLIC DOMAIN
+
+
+
+    -->
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA4A8AAO/vAADqrwAA6q8AAOqvAADqrwAA6q8AAOqvAADqrwAA7+8AAMAHAADf9wAAwAcAAPu/AAD4PwAA" rel="icon" type="image/x-icon" />
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+   <script src = "trashmagic.js"></script>        
+   <title>TRASHNET LINK EDITOR</title>    
+</head>
+<body>    
+
+    <a id = "homelink" href = "index.html">HOME</a>
+<table id = "maintable">
+</table>
+
+<div id = "links"></div>
+<script>
+
+maintable = document.getElementById("maintable");
+links = [];
+
+var httpc2 = new XMLHttpRequest();
+httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("links").innerHTML = this.responseText;
+        links = document.getElementById("links").getElementsByTagName("A");
+        drawtable();
+        
+    }
+};
+
+httpc2.open("GET", "fileloader.php?filename=links.html", true);
+httpc2.send();
+    
+    
+function drawtable(){
+    maintable.innerHTML = "";
+    for(var index = 0;index < links.length;index++){
+        var newtr = document.createElement("TR");
+        maintable.appendChild(newtr);
+        newtr.id = "link" + index.toString();
+        var newtd = document.createElement("TD");
+        newtd.innerHTML = "TEXT:";
+        newtr.appendChild(newtd);
+        var newtd = document.createElement("TD");
+        var newinput = document.createElement("INPUT");
+        newtd.appendChild(newinput);
+        newinput.value = links[index].innerHTML;
+        newinput.onchange = function(){
+            linkindex = parseInt(this.parentNode.parentNode.id.substring(4));
+            links[linkindex].innerHTML = this.value;
+            savelinks();
+        }
+        newtr.appendChild(newtd);
+        var newtd = document.createElement("TD");
+        newtd.innerHTML = "URL:";
+        newtr.appendChild(newtd);
+        var newtd = document.createElement("TD");
+        var newinput = document.createElement("INPUT");
+        newinput.value = links[index].href;
+        newinput.onchange = function(){
+            linkindex = parseInt(this.parentNode.parentNode.id.substring(4));
+            links[linkindex].href = this.value;
+            savelinks();
+        }
+        newtd.appendChild(newinput);
+        newtr.appendChild(newtd);
+        
+        var newtd = document.createElement("TD");
+        newtd.innerHTML = "COPY";
+                newtd.className = "button";
+
+        newtr.appendChild(newtd);
+        newtd.onclick = function(){
+            //copy
+            linkindex = parseInt(this.parentNode.id.substring(4));
+            var newa = document.createElement("A");
+            newa.innerHTML = links[linkindex].innerHTML;
+            newa.href = links[linkindex].href;
+            document.getElementById("links").insertBefore(newa,links[linkindex]);
+            links = document.getElementById("links").getElementsByTagName("A");
+            drawtable();
+            savelinks();
+            
+        }
+
+        var newtd = document.createElement("TD");
+        newtd.innerHTML = "DELETE";
+        newtd.className = "button";
+        newtr.appendChild(newtd);
+        newtd.onclick = function(){
+            //delete
+            if(links.length > 1){
+                linkindex = parseInt(this.parentNode.id.substring(4));
+                links[linkindex].remove();
+                links = document.getElementById("links").getElementsByTagName("A");
+                drawtable();
+                savelinks();
+            }
+            else{
+                //if it has only one element, clear and repopulate with default
+                links[0].remove();                
+                var newa = document.createElement("A");
+                newa.innerHTML = "UP A LEVEL";
+                newa.href = "../";
+                document.getElementById("links").appendChild(newa);
+                var newa = document.createElement("A");
+                newa.innerHTML = "LINK EDITOR";
+                newa.href = "linkeditor.html";
+                document.getElementById("links").appendChild(newa);
+                var newa = document.createElement("A");
+                newa.innerHTML = "QR CODE";
+                newa.href = "qrcode.html";
+                document.getElementById("links").appendChild(newa);
+                var newa = document.createElement("A");
+                newa.innerHTML = "WEB EDITOR";
+                newa.href = "webeditor.html";
+                document.getElementById("links").appendChild(newa);
+
+                links = document.getElementById("links").getElementsByTagName("A");
+                drawtable();
+                savelinks();
+            }
+
+    
+        }
+
+    }
+}
+
+
+function savelinks(){
+    
+    linkhtml = document.getElementById("links").innerHTML;
+    linkhtml = linkhtml.replace(/<\/a><a>/gi,"</a>\n<a>");
+    var httpc = new XMLHttpRequest();
+    var url = "filesaver.php";        
+    httpc.open("POST", url, true);
+    httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+    httpc.send("data="+encodeURIComponent(linkhtml)+"&filename=links.html");//send text to filesaver.php        
+
+
+    
+}
+
+</script>
+<style>
+body,input,table{
+    background-color:#9f8767;
+    font-family:Comic Sans MS;
+}
+a{
+    display:block;
+    color:blue;
+    margin-left:1em;
+    margin-top:1em;
+    margin-bottom:1em;
+    font-size:2em;
+}
+
+.button{
+    cursor:pointer;
+    border:solid;
+}
+.button:hover{
+    background-color:green;
+}
+.button:active{
+    background-color:yellow;
+}
+</style>
+</body>
+</html>

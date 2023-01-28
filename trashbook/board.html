@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>  
+    <meta charset="utf-8">
+
+        <!--
+
+TRASH MAGIC 
+
+TRASHNET
+
+EVERYTHING IS PHYSICAL
+EVERYTHING IS FRACTAL
+EVERYTHING IS RECURSIVE
+
+NO MONEY
+NO MINING
+NO PROPERTY
+
+LOOK AT THE FUNGI
+LOOK AT THE INSECTS
+LANGUAGE IS HOW THE MIND PARSES REALITY
+
+    All Code, text, art, media, technology, and ideas CC0 PUBLIC DOMAIN
+
+
+    https://github.com/lafeLabs/trashnet
+
+    -->
+    
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA4A8AAO/vAADqrwAA6q8AAOqvAADqrwAA6q8AAOqvAADqrwAA7+8AAMAHAADf9wAAwAcAAPu/AAD4PwAA" rel="icon" type="image/x-icon" />
+
+       <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+   <title>TRASHNET</title>    
+</head>
+<body>    
+    <table id = "inputtable">
+        <tr>
+            <td>NEW BOARD:</td>
+            <td><input id = "newboardinput"/></td>
+            <td><a id ="newboardlink"></a></td>
+        </tr>
+    </table>
+
+    <textarea id = "board"></textarea>
+    <div id = "links">
+    </div>
+    
+<script>
+
+
+board = "";
+
+var httpc2 = new XMLHttpRequest();
+httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        board = this.responseText;
+        document.getElementById("board").value = board;
+    }
+};
+
+httpc2.open("GET", "fileloader.php?filename=board.txt", true);
+httpc2.send();
+
+document.getElementById("board").onkeyup = function() {
+        wall = this.value;
+        var httpc = new XMLHttpRequest();
+        var url = "filesaver.php";        
+        httpc.open("POST", url, true);
+        httpc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+        httpc.send("data="+encodeURIComponent(wall)+"&filename=board.txt");//send text to filesaver.php        
+}
+
+
+var httpc2 = new XMLHttpRequest();
+httpc2.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("links").innerHTML = this.responseText;
+        loadfolders();
+    }
+};
+
+httpc2.open("GET", "fileloader.php?filename=links.html", true);
+httpc2.send();
+
+
+
+function loadfolders(){
+    domelement = document.getElementById("links");
+    files = [];
+    var httpfiles = new XMLHttpRequest();
+    httpfiles.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            files = JSON.parse(this.responseText);
+            var locallinks = [];
+            var oldlinks = domelement.getElementsByTagName("A");
+            for(var index = 0;index < oldlinks.length;index++){
+                locallinks.push(oldlinks[index]);
+            }
+            for(var index = 0;index < files.length;index++){
+                var newa = document.createElement("A");
+                newa.href = files[index] + "/";
+                newa.innerHTML = files[index] + "/";
+                domelement.appendChild(newa);
+                locallinks.push(newa);
+            }
+        }
+    };
+    httpfiles.open("GET", "dirdir.php", true);
+    httpfiles.send();
+}
+
+document.getElementById("newboardinput").value = "";
+document.getElementById("newboardinput").onchange = function() {
+    var newa = document.getElementById("newboardlink");
+    newa.innerHTML = "CLICK LINK TO CREATE NEW BOARD " + this.value;
+    newa.href = "mkdir.php?dir=" + this.value;
+}
+
+</script>
+<style>
+body,input,table{
+    background-color:#9f8767;
+    font-family:Comic Sans MS;
+}
+a{
+    display:block;
+    color:blue;
+    margin-left:5em;
+    margin-bottom:1em;
+    font-size:2em;
+}
+
+#board{
+    position:absolute;
+    width:90%;
+    height:48%;
+    left:5%;
+    top:3em;
+    background-color:#9f8767;
+    color:black;
+    font-family:Comic Sans MS;
+    overflow:scroll;
+    border:solid;
+    border-width:5px;
+}
+#links{
+    position:absolute;
+    left:0px;
+    right:0px;
+    bottom:2em;
+    top:55%;
+    overflow:scroll;
+}
+#inputtable{
+    position:absolute;
+    top:0px;
+    font-size:1.2em;
+    background-color:#9f8767;
+    font-family:Comic Sans MS;
+    
+}
+#newboardinput{
+    font-size:1em;
+}
+
+</style>
+</body>
+</html>
+
+

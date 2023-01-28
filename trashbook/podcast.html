@@ -39,28 +39,24 @@ LANGUAGE IS HOW THE MIND PARSES REALITY
 <body>    
 <div id = "mainscroll">
     
-    <h1>TRASH MAGIC LITTLE FREE BOOK LIBRARY</h1>
-    
-    
     <a href = "webeditor.html">WEB CODE EDITOR</a>
     <a href = "https://github.com/lafeLabs/trashnet">TRASHNET SERVER REPLICATOR AT GITHUB.COM</a>
-    <a href = "copy.php?from=books.html&to=index.html">COPY BOOKS PAGE INTO INDEX.HTML</a>
+    <a href = "copy.php?from=podcast.html&to=index.html">COPY PODCAST PAGE INTO INDEX.HTML</a>
     <a href=  "index.html">HOME</a>
     <a href  = "qrcode.html">QR CODES</a>
     
+    <h1>TRASH MAGIC PODCAST</h1>
 
-<p>
-Gather books.  Put them in the Library to share. 
-</p>
 
-<p>To create a TRASHNET little free library, make a TRASHNET server using the instructions linked above to the Gihtub, and create a subdomain for the library which points to a folder in "/var/www/html" on the server. Copy this page "index.html".  Create a symbolic link using the linux command ln to make a desktop shortcut for the books folder so that it is easy to find as you post books to the folder.  Create signs which point to the URL for your library(choose an easy to use subdomain), and add QR codes using the links for that.</p>
+<p>To create a podcast, make a TRASHNET server using the instructions linked below to the Gihtub, and create a subdomain for the distro which points to a folder in "/var/www/html" on the server. Copy this page "index.html".  Create a symbolic link using the linux command ln to make a desktop shortcut for the zines folder so that it is easy to find as you post zines to the folder.  Create signs which point to the URL for your podcast(choose an easy to use subdomain), and add QR codes using the links for that.</p>
 
 <pre>
-    ln -s /var/www/html/sloanslakedotart/books ~/Desktop/sloanslakebooks
+    ln -s /var/www/html/sloanslakedotart/podcast ~/Desktop/sloanslakepodcast
 </pre>
 
-<h1>BOOKS</h1>
-<div id = "books"></div>
+<h1>PODCAST EPISODES</h1>
+<div id = "podcast">
+</div>
 
 
 
@@ -78,8 +74,8 @@ for(var index = 0;index < titles.length;index++){
 rainbow(document.getElementsByTagName("A"));
 
 
-//create a folder called "books" below this one, and put the books in there.
-listfiles(document.getElementById("books"),"books");
+//create a folder called "podcast" below this one, and put the podcast episodes in there.
+listfiles(document.getElementById("podcast"),"podcast");
 
 
 </script>
