@@ -16,6 +16,7 @@
         "readme.html",
         "readmeeditor.html",
         "replicators.html",
+        "trashbook.html",
         "trashmagic.css",
         "trashmagic.html",
         "trashmagic.js",
