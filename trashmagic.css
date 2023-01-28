@@ -17,6 +17,20 @@ body{
 }
 pre{
     font-family:courier;
+    color:#00ff00;
+    background-color:black;
+    text-align:justify;
+    padding:1em 1em 1em 1em;
+    font-size:1.5em;
+    border:solid;
+    display:block;
+    border-color:black;
+    border-width:10px;
+    border-radius:1em;    
+    width:80%;
+    margin:auto;
+    margin-top:1em;
+    overflow-x:scroll;
 }
 h1{
     text-align:center;
