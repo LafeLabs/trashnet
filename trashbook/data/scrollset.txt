@@ -1,6 +1,15 @@
 {
     "server": "https://trashbook.sloanslake.art/",
     "scrolls": [
+        "GEOMETRON",
+        "INTERNETOFDIRT",
+        "MAGIC",
+        "SELLTHISBOOK",
+        "TRASH",
+        "TRASHCARTS",
+        "TRASHMAGIC",
+        "TRASHSERVERS",
+        "TRASHSIGNS",
         "home",
         "qubert",
         "zad"
