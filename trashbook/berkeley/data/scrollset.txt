@@ -1,0 +1,6 @@
+{
+    "server": "https://berkeley.trashrobot.org/",
+    "scrolls": [
+        "home"
+    ]
+}

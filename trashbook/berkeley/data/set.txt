@@ -1,0 +1,66 @@
+[
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/teaching/README.md",
+        "name": "scrolls/teaching"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/operations/README.md",
+        "name": "scrolls/operations"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/wireless/README.md",
+        "name": "scrolls/wireless"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/power/README.md",
+        "name": "scrolls/power"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/arduino/README.md",
+        "name": "scrolls/arduino"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/python/README.md",
+        "name": "scrolls/python"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/learnphp/README.md",
+        "name": "scrolls/learnphp"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/learnjavascript/README.md",
+        "name": "scrolls/learnjavascript"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/learncss/README.md",
+        "name": "scrolls/learncss"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/learnhtml/README.md",
+        "name": "scrolls/learnhtml"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/markdown/README.md",
+        "name": "scrolls/markdown"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/servers/README.md",
+        "name": "scrolls/servers"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/linux/README.md",
+        "name": "scrolls/linux"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/install/README.md",
+        "name": "scrolls/install"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/buy/README.md",
+        "name": "scrolls/buy"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/LafeLabs/pi/main/introduction/README.md",
+        "name": "scrolls/introduction"
+    }
+]

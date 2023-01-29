@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+        <!--
+
+TRASH MAGIC 
+
+EVERYTHING IS PHYSICAL
+EVERYTHING IS FRACTAL 
+EVERYTHING IS RECURSIVE
+
+NO MONEY
+NO MINING
+NO PROPERTY
+
+LOOK AT THE FUNGI
+LOOK AT THE INSECTS
+LANGUAGE IS HOW THE MIND PARSES REALITY
+
+
+
+    All Code, text, art, media, technology, and ideas CC0 PUBLIC DOMAIN
+
+
+
+    -->
+    
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA4A8AAO/vAADqrwAA6q8AAOqvAADqrwAA6q8AAOqvAADqrwAA7+8AAMAHAADf9wAAwAcAAPu/AAD4PwAA" rel="icon" type="image/x-icon" />
+
+
+       <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+   <title>TRASH MAGIC</title>    
+   <script src = "trashmagic.js"></script>
+   <link rel="stylesheet" href="trashmagic.css">
+</head>
+<body>    
+<div id = "mainscroll">
+    
+    <a href = "webeditor.html">WEB CODE EDITOR</a>
+    <a href = "https://github.com/lafeLabs/trashnet">TRASHNET SERVER REPLICATOR AT GITHUB.COM</a>
+    <a href = "copy.php?from=label.html&to=index.html">COPY MUSIC LABEL PAGE INTO INDEX.HTML</a>
+    <a href=  "index.html">HOME</a>
+    <a href  = "qrcode.html">QR CODES</a>
+    
+    <h1>TRASH MAGIC MUSIC LABEL</h1>
+
+
+<p>To create a music label, make a TRASHNET server using the instructions linked below to the Gihtub, and create a subdomain for the distro which points to a folder in "/var/www/html" on the server. Copy this page "index.html".  Create a symbolic link using the linux command ln to make a desktop shortcut for the label folder so that it is easy to find as you post songs to the folder.  Create signs which point to the URL for your label(choose an easy to use subdomain), and add QR codes using the links for that.</p>
+
+<pre>
+    ln -s /var/www/html/sloanslakedotart/label ~/Desktop/sloanslakelabel
+</pre>
+
+<h1>PODCAST EPISODES</h1>
+<div id = "podcast">
+</div>
+
+
+
+</div>
+<script>
+
+googleyeyes(8);
+
+titles = document.getElementsByTagName("H1");
+for(var index = 0;index < titles.length;index++){
+    rainbowstring(titles[index]);    
+}
+
+
+rainbow(document.getElementsByTagName("A"));
+
+
+//create a folder called "podcast" below this one, and put the podcast episodes in there.
+listfiles(document.getElementById("podcast"),"podcast");
+
+
+</script>
+</body>
+</html>
+
+
