@@ -1,5 +1,7 @@
 # [TRASHNET](https://github.com/LafeLabs/trashnet)
 
+# [TRASHBOOK](https://trashbook.sloanslake.art)
+
 ![](https://raw.githubusercontent.com/LafeLabs/trashnet/main/trashmagic/trashnet2.png)
 
 The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
