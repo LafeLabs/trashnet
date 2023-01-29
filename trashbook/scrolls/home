@@ -1,28 +1,13 @@
-# TRASHBOOK
+### [TRASHBOOK.SLOANSLAKE.ART](https://trashbook.sloanslake.art)
 
-TRASHBOOK IS A MAGIC BOOK MADE FROM TRASH.
+TRASHBOOK IS A SELF-REPLICATING BOOK MADE OF TRASH.
 
-
- - [editor.php](editor.php)
- - [php/replicator.txt](php/replicator.txt)
- - [gm.trashrobot.org](https://gm.trashrobot.org)
- 
-### scroll set replicator for geometron magic live instance:
-
-```
-https://raw.githubusercontent.com/LafeLabs/trashnet/main/gm/
-```
-
-### scroll set replicator for Alice In Wonderland:
-```
-https://raw.githubusercontent.com/LafeLabs/pibrary/main/gutenberg/aliceinwonderland/
-```
-### scroll set replicator for Alice Through the Looking Glass:
-```
-https://raw.githubusercontent.com/LafeLabs/pibrary/main/gutenberg/alicethroughthelookinglass/
-```
-### scroll set replicator for CHAOS BIBLE:
-
-```
-https://raw.githubusercontent.com/LafeLabs/pibrary/main/gutenberg/chaosbible/)
-```
+1. [MAGIC](scrolls/MAGIC)
+2. [TRASH](scrolls/TRASH)
+3. [TRASH MAGIC](scrolls/TRASHMAGIC)
+4. [TRASH CARTS](scrolls/TRASHCARTS)
+5. [TRASH SIGNS](scrolls/TRASHSIGNS)
+6. [SERVERS NOT BOMBS](scrolls/TRASHSERVERS)
+7. [THE INTERNET OF DIRT](scrolls/INTERNETOFDIRT)
+8. [GEOMETRON](scrolls/GEOMETRON)
+9. [SELL THIS BOOK](scrolls/SELLTHISBOOK)

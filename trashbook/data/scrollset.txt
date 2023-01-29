@@ -1,5 +1,5 @@
 {
-    "server": "https://gm.trashrobot.org/",
+    "server": "https://trashbook.sloanslake.art/",
     "scrolls": [
         "home",
         "qubert",
