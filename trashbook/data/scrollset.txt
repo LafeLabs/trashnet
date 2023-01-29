@@ -1,6 +1,7 @@
 {
     "server": "https://trashbook.sloanslake.art/",
     "scrolls": [
+        "COPYTHISBOOK",
         "GEOMETRON",
         "INTERNETOFDIRT",
         "MAGIC",
