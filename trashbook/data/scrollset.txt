@@ -1,5 +1,5 @@
 {
-    "server": "https://trashbook.sloanslake.art/",
+    "server": "https://trashbook.trashrobot.org/",
     "scrolls": [
         "COPYTHISBOOK",
         "GEOMETRON",

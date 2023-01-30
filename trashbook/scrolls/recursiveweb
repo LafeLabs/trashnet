@@ -1,0 +1,63 @@
+## [HOME](scrolls/home)
+
+# 3. the Recursive Web 
+
+Also see the [TRASHNET](https://github.com/LafeLabs/trashnet) virtual cardboard system.
+ 
+# [click here to go to the recursive web replicator on github](https://github.com/LafeLabs/trashmagic/tree/main/web) 
+
+## [next scroll:the magic book](scrolls/magicbooks)
+
+# [http://localhost](http://localhost)
+
+# [WWW DOT SLOANS LAKE DOT ART](https://www.sloanslake.art)
+
+# [WWW DOT SOUTH BROADWAY DOT NET](https://www.southbroadway.net)
+
+# [WWW DOT SOUTH PLATTE DOT NET](https://www.southplatte.net)
+
+# [TRASH MAGIC](https://github.com/LafeLabs/trashmagic/)
+
+# [TRASH MAGIC RECURSIVE WEB](https://github.com/LafeLabs/trashmagic/tree/main/web)
+
+# [TRASH MAGIC ZINE DISTRO](https://github.com/LafeLabs/trashmagic/tree/main/web/distro)
+
+The purpose of Trash Magic is to create a civilization of free things entirely built from trash.  We will build things from trash, share them freely, and share how to build them with others so that they can replicate.  We call this replication from person to person of the knowhow and desire to make things "magic".  
+
+THE RECURSIVE WEB IS MADE OF WORLDS AND QUESTS. YOU CONSTRUCT, REPLICATE AND DESTROY WORLDS AND QUESTS TO BUILD TRASH MAGIC.
+
+
+# Recursive Web
+
+self-replicating web pages.
+
+
+Find any old computer that someone is getting rid of, it could be mac, pc or linux(but not Chromebook).  
+
+You will need a thumb drive.  Follow the instructions below to install Ubuntu and wipe all the old data on the hard drive.
+
+[https://ubuntu.com instructions](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
+
+Once Ubuntu is installed, open a command line and type:
+
+```
+sudo apt update
+sudo apt install apache2 -y
+sudo apt install php libapache2-mod-php -y
+cd /var/www/html
+sudo rm index.html
+sudo apt install curl
+sudo curl -o replicator.php https://raw.githubusercontent.com/LafeLabs/trashmagic/main/web/php/replicator.txt
+cd ..
+sudo chmod -R 0777 *
+cd html
+php replicator.php
+sudo chmod -R 0777 *
+```
+
+This will clone the trash magic recursive web to your server. 
+
+Now go into the DNS records of a domain you have access to or ask someone else to it for a domain they have access to and add an "A record" with entries "@" and "www" for that domain to the home IP address of wherever the server is located.  Set up port forwarding on ports 80 and 443 on the router for that local network.  To add subdomains, use virtual hosts on apache(check [top level trash magic readme](https://github.com/LafeLabs/trashmagic/blob/main/README.md) or ask for help).
+
+![](https://raw.githubusercontent.com/LafeLabs/trashmagic/main/media/trashmagic/qrcode-pages/recursiveweb.png)
+
