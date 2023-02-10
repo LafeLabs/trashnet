@@ -55,6 +55,8 @@ Now go into the DNS records of a domain you have access to or ask someone else t
 
 To point multiple domains or subdomains to a server, we want to set up a DUMP DIRECTOR using [nginx proxy manager](https://nginxproxymanager.com/).  We will start with a trash web server from the above instructions(not the general trash magic server, but the web one).
 
+DUMP = Distributed User Media Portal
+
 first stop apache to start nginx on port 80 so they don't conflict:
 
 ```
